@@ -5,7 +5,8 @@ import {
   Text,
   View,
   TouchableOpacity,
-  TextInput
+  TextInput,
+  Image
 } from 'react-native';
 import { Button } from './components/shared/Button';
 
@@ -20,6 +21,13 @@ export default class App extends Component {
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
+        <Image source={require('./images/a.png')}/>
+        <Image
+          source={{
+            uri: 'https://zmp3-photo.zadn.vn/banner/d/8/4/1/d841517583f4607c8864d36995da0d0e.jpg'
+          }}
+          style={{ height: 100, width: 200 }}
+        />
         <TextInput
           style={styles.input}
           value={this.state.txt}
