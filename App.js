@@ -18,6 +18,11 @@ export default class App extends Component {
         <Button
           title="SHOW TEXT"
           onPress={() => console.log(123)}
+          style={{ backgroundColor: 'red' }}
+        />
+        <Button
+          title="SHOW TEXT"
+          onPress={() => console.log(123)}
         />
       </View>
     );
