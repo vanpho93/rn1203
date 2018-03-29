@@ -10,14 +10,14 @@ export class Button extends Component {
         return {};
     }
     render() {
-        const { title, type } = this.props;
+        const { title, type, textStyle } = this.props;
         const customStyle = this.getStyle();
         return (
             <TouchableOpacity
                 {...this.props}
-                style={[styles.buttonContainer, customStyle, { ...this.props.style }]}
+                style={[styles.buttonContainer, customStyle, this.props.style]}
             >
-                <Text style={styles.buttonText}>
+                <Text style={[styles.buttonText, textStyle]}>
                     {title}
                 </Text>
             </TouchableOpacity>
